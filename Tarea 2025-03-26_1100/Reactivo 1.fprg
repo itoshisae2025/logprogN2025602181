@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo 1"/>
+        <attribute name="authors" value="Leon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-23 06:04:30 p. m."/>
+        <attribute name="created" value="TGVvbjtMRU9OOzIwMjUtMDMtMjM7MDQ6MDM6MjIgcC4gbS47MjE2MA=="/>
+        <attribute name="edited" value="TGVvbjtMRU9OOzIwMjUtMDMtMjM7MDY6MDQ6MzAgcC4gbS47MjsyMjcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numDonas" type="Integer" array="False" size=""/>
+            <declare name="preDona" type="Integer" array="False" size=""/>
+            <declare name="preDonaD1" type="Integer" array="False" size=""/>
+            <declare name="preDonaD2" type="Integer" array="False" size=""/>
+            <declare name="Total" type="Integer" array="False" size=""/>
+            <assign variable="preDona" expression="10"/>
+            <assign variable="preDonaD1" expression="9"/>
+            <assign variable="preDonaD2" expression="8"/>
+            <output expression="&quot;Ingrese la Cantidad de Donas&quot;" newline="True"/>
+            <input variable="numDonas"/>
+            <if expression="numDonas &gt;= 30">
+                <then>
+                    <if expression="numDonas &gt;= 50">
+                        <then>
+                            <output expression="&quot;Total a pagar&quot;" newline="True"/>
+                            <assign variable="Total" expression="numDonas * preDonaD2"/>
+                            <output expression="numDonas * preDonaD2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Total a pagar&quot;" newline="True"/>
+                            <assign variable="Total" expression="numDonas * preDonaD1"/>
+                            <output expression="numDonas * preDonaD1" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Total a pagar&quot;" newline="True"/>
+                    <assign variable="Total" expression="numDonas * preDona"/>
+                    <output expression="numDonas * preDona" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
