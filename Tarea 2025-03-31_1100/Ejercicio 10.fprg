@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Tarea_Ejercicio 10"/>
+        <attribute name="authors" value="Leon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 07:48:20 p. m."/>
+        <attribute name="created" value="TGVvbjtMRU9OOzIwMjUtMDMtMjc7MDU6NTg6NDkgcC4gbS47MjE4NA=="/>
+        <attribute name="edited" value="TGVvbjtMRU9OOzIwMjUtMDMtMjc7MDc6NDg6MjAgcC4gbS47MzsyMjg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingresa tu edad&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad &lt; 4">
+                <then>
+                    <output expression="&quot;Puedes entrar gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad &gt;= 4 AND edad &lt;= 18">
+                        <then>
+                            <output expression="&quot;Deberas pagar $200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edad &gt; 18">
+                                <then>
+                                    <output expression="&quot;Deberas pagar $500&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Deberas pagar&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

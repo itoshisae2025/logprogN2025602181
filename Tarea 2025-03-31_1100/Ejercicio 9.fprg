@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Ejercicio 9"/>
+        <attribute name="authors" value="Leon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 04:39:53 p. m."/>
+        <attribute name="created" value="TGVvbjtMRU9OOzIwMjUtMDMtMjc7MDM6MjA6NDAgcC4gbS47MjE2Mg=="/>
+        <attribute name="edited" value="TGVvbjtMRU9OOzIwMjUtMDMtMjc7MDQ6Mzk6NTMgcC4gbS47MjsyMjg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iniNombre" type="String" array="False" size=""/>
+            <declare name="iniSexo" type="String" array="False" size=""/>
+            <output expression="&quot;Ingresa la inicial de tu nombre&quot;" newline="True"/>
+            <input variable="iniNombre"/>
+            <output expression="&quot;Ingresa tu Sexo&quot;" newline="True"/>
+            <input variable="iniSexo"/>
+            <if expression="iniNombre &lt; &quot;M&quot; AND iniSexo == &quot;M&quot;">
+                <then>
+                    <output expression="&quot;Eres del Grupo A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="iniNombre &gt; &quot;N&quot; AND iniSexo == &quot;H&quot;">
+                        <then>
+                            <output expression="&quot;Eres del Grupo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Eres del Grupo B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
