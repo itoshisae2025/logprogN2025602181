@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Entero a Factorial"/>
+        <attribute name="authors" value="Leon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 08:37:17 p. m."/>
+        <attribute name="created" value="TGVvbjtMRU9OOzIwMjUtMDQtMDQ7MDc6NTU6MTYgcC4gbS47MjE3Mw=="/>
+        <attribute name="edited" value="TGVvbjtMRU9OOzIwMjUtMDQtMDQ7MDg6Mzc6MTcgcC4gbS47MTsyMjgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <declare name="facto" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escribe un numero entero&quot;" newline="True"/>
+            <assign variable="facto" expression="1"/>
+            <input variable="num"/>
+            <while expression="num &gt; 1">
+                <assign variable="facto" expression="facto * num"/>
+                <assign variable="num" expression="num - 1"/>
+            </while>
+            <output expression="&quot;El factorial es igual a &quot;" newline="False"/>
+            <output expression="facto" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

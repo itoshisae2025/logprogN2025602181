@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Serie Finobacci"/>
+        <attribute name="authors" value="Leon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-04 09:54:33 p. m."/>
+        <attribute name="created" value="TGVvbjtMRU9OOzIwMjUtMDQtMDQ7MDg6Mzc6MzcgcC4gbS47MjE3Nw=="/>
+        <attribute name="edited" value="TGVvbjtMRU9OOzIwMjUtMDQtMDQ7MDk6NTQ6MzMgcC4gbS47MjsyMjgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1" type="Integer" array="False" size=""/>
+            <declare name="num2" type="Integer" array="False" size=""/>
+            <declare name="Serie" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escribe el primer numero&quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Escribe el segundo numero&quot;" newline="True"/>
+            <input variable="num2"/>
+            <for variable="i" start="3" end="64" direction="inc" step="1">
+                <assign variable="Serie" expression="num1 + num2"/>
+                <output expression="Serie" newline="True"/>
+                <assign variable="num1" expression="num2"/>
+                <assign variable="num2" expression="Serie"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
